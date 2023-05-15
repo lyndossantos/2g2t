@@ -1,2 +1,2 @@
 # Estudo segundo Trimestre
-Emilyn - 10
+# Emilyn - 10
