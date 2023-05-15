@@ -1,2 +1,2 @@
 # Estudo segundo Trimestre
-Nome: Emilyn - N10
+Nome: Emilyn - N 10
