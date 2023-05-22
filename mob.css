@@ -11,11 +11,28 @@
 
 .conteudo{
     width: 100%;
-    background-color: #E3D2F4;
+    background-color:  #E3D2F4;
+   
 }
 
 .rodape{
     background-color: #E3D2F4;
     width: 100%;
     text-align: center;
+}
+.info-Cinema{
+    width: 100%;
+    background-color: #E3D2F4 ;
+}
+.info-Filmes{
+    width: 100%;
+    background-color:  #FFD1D0;
+}
+.info-Retro{
+    width: 100%;
+    background-color: #E3D2F4 ;
+}
+.info-Destaques{
+    width: 100%;
+    background-color:  #FFD1D0; ;
 }
