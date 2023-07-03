@@ -1,57 +1,63 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
- :root{
+:root{
     --cor-fundo: #d1c2f3;
     --cor-fonte: blue;
-    --cor-hover:pink;
+    --cor-hover: pink;
+
 }
-a {
+a{
     text-decoration: none;
 }
-ul {
-    list-style: none;
+ul {    width: 100%;
+    height: 60px;
 }
-.header{
-    background-color: var(--cor-fundo);
-    position: sticky;
-    top: 0;
-    width: 100%;
+
+.header {
+  background-color:var(--cor-fundo);
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
-.logo {
+.logo{
     display: inline;
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
+
 }
-.nav {
+.nav{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
     overflow: hidden;
 }
 .menu a {
     display: block;
     padding: 30px;
-    color: var(--cor-fonte);
+    color: var(--cor-fonte);   
 }
-.menu a:hover {
-    background-color: var(--cor-hover);
+.menu a:hover{
+ background-color: var(--cor-hover);
+
 }
-.nav {
+.nav{
     max-height: 0;
     transition: max-height .5s ease-out;
+
 }
-.hamb {
+.hamb{
     cursor: pointer;
-    float: right;
+    float:right;
     padding: 35px 20px;
+
 }
 .hamb-line{
     background-color: var(--cor-fonte);
     display: block;
     height: 2px;
-    position: relative;
+    position:relative;
     width: 24px;
 }
 .hamb-line::before,
@@ -65,7 +71,7 @@ ul {
     width: 100%;
 }
 .hamb-line::before{
-    top: 5px;
+    top: 5px    ;
 }
 .hamb-line::after{
     top: -5px;
@@ -73,48 +79,62 @@ ul {
 .side-menu{
     display: none;
 }
-
-.conteudo{
-    width: 100%;
-    background-color:  rgb(202, 149, 202);
-   
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+#logo {
+    width: 75px;
+   display: flex;
+}
+.side-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
 }
 
-.rodape{
-    background-color:#d1c2f3;
+.conteudo {
+    width: 100%;
+    background-color:  rgb(202, 149, 202);
+}
+
+.rodape {
+    background-color:  #d1c2f3;
     width: 100%;
     text-align: center;
 }
-.info-Cinema{
+.info-cinema {
     width: 100%;
-    background-color:#BE9DDF ;
+    background-color:#BE9DDF;
 }
-.info-Filmes{
+.info-filme {
     width: 100%;
-    background-color:rgb(202, 149, 202) ;
+    background-color:  rgb(202, 149, 202);
 }
-.info-Retro{
+.info-filme-retro {
     width: 100%;
     background-color: #BE9DDF;
 }
-.info-Destaques{
+.info-destaque {
     width: 100%;
-    background-color:rgb(202, 149, 202); 
+    background-color:  rgb(202, 149, 202);
 }
-.img-estilo{
-    width: 85%;
+.img-estilo {
+    width: 100%;
 }
-@media screen and (min-width: 768px) {
-    .menu{
+@media screen and (mind-width: 768px) {
+    .menu {
         height: 120px;
         background-color: #d1c2f3;
     }
     .conteudo {
-       display: flex;
+        display: flex;
     }
 }
 @media screen and (min-width: 1028px) {
-    .menu{
+    .menu {
         height: 200px;
         background-color: #d1c2f3;
     }
