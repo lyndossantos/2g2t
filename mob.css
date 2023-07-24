@@ -125,21 +125,23 @@ ul {    width: 100%;
     width: 100%;
 }
 @media screen and (mind-width: 768px) {
-    .menu {
-        height: 120px;
-        background-color: #d1c2f3;
+   .nav{
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+   }
+   .menu li {
+    float: left;
+   }
+   .menu a:hover {
+    background-color: transparent;
+    color: var(--cor-hover);
+   }
+   .hamb {
+    display: none;
+   }
     }
-    .conteudo {
-        display: flex;
-    }
-}
-@media screen and (min-width: 1028px) {
-    .menu {
-        height: 200px;
-        background-color: #d1c2f3;
-    }
-    .conteudo {
-        display: grid;
-    }
-}
 
