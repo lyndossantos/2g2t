@@ -45,13 +45,11 @@ ul {    width: 100%;
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
-
 }
 .hamb{
     cursor: pointer;
     float:right;
     padding: 35px 20px;
-
 }
 .hamb-line{
     background-color: var(--cor-fonte);
@@ -82,19 +80,20 @@ ul {    width: 100%;
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
 .side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
     top: 0;
-}
-#logo {
-    width: 200px;
-   display: flex;
 }
 .side-menu:checked ~ .hamb .hamb-line::after{
     transform: rotate(45deg);
     top: 0;
 }
-
+#logo {
+    width: 200px;
+}
 .conteudo {
     width: 100%;
     background-color:  rgb(202, 149, 202);
@@ -124,25 +123,24 @@ ul {    width: 100%;
 .img-estilo {
     width: 100%;
 }
-@media screen and (mind-width: 768px) {
-   .nav{
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
-   }
-   .menu li {
-    float: left;
-   }
-   .menu a:hover {
-    background-color: transparent;
-    color: var(--cor-hover);
-   }
-   .hamb {
-    display: none;
-   }
+@media screen and (min-width: 768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
     }
+    .menu li {
+        float: left;
+    }
+    .menu a:hover {
+        background-color: transparent;
+    }
+    .hamb {
+        display: none;
+    }
+ }
 
 
