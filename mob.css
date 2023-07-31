@@ -98,6 +98,15 @@ ul {    width: 100%;
     width: 100%;
     background-color:  rgb(202, 149, 202);
 }
+.conteudo-info{
+    display: flex;
+}
+.img-info{
+    display: none;
+}
+.texto-info{
+    padding: 0%;
+}
 
 .rodape {
     background-color:  #d1c2f3;
@@ -140,6 +149,15 @@ ul {    width: 100%;
     }
     .hamb {
         display: none;
+    }
+    .conteudo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "foto" "foto";
+    }
+    .img-info{
+        display: block;
+        
     }
  }
 
