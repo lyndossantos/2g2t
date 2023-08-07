@@ -6,6 +6,7 @@
     --cor-fundo: #d1c2f3;
     --cor-fonte: blue;
     --cor-hover: rgb(214, 162, 245);
+    --cor-clara-fundo:rgb(217, 176, 241);
 
 }
 a{
@@ -132,7 +133,22 @@ ul {    width: 100%;
 .img-estilo {
     width: 100%;
 }
-@media screen and (min-width: 768px) {
+.info{
+    width: 100vw;
+    display: grid;
+
+}
+
+div[class^="item-"]{
+background-color: var(--cor-clara-fundo);
+padding: 2px;
+width: calc(100vw - 4px);
+height: 50vh;
+margin: 2px;
+grid-area: "item";
+}
+
+@media screen and (min-width: 820px) {
     .nav {
         max-height: none;
         top: 0;
@@ -150,15 +166,19 @@ ul {    width: 100%;
     .hamb {
         display: none;
     }
-    .conteudo{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "foto" "foto";
-    }
     .img-info{
         display: block;
         
     }
+    .info{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "item" "item";
+    }
  }
-
-
+ @media screen and (min-width: 1024px) {
+    .info{
+        grid-template-columns: 33% 34% 33%;
+        grid-template-areas: "item" "item" "item";
+    }
+    
+ }
